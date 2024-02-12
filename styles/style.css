@@ -5,12 +5,12 @@
 }
 
 /* common shared styles */
-.banner, .poster-title, .column-title, .sectionE-title{
+.banner, .poster-title, .column-title, .sectionE-title,.sectionF-title{
     font-family: 'Merriweather', serif;
 
 }
 
-.sectionA , .sectionC, .column-description,.poster-description,.column-subtitle, .year, .year-description,.sectionE-subtitle, .sectionE-description, .btn-primary{
+.sectionA , .sectionC, .column-description,.poster-description,.column-subtitle, .year, .year-description,.sectionE-subtitle, .sectionE-description,.sectionF-subtitle,.sectionF-description, .btn-primary{
     font-family: 'Inter', sans-serif;
 }
 
@@ -172,11 +172,12 @@ main section{
 
 }
 
-.column-subtitle{
+.column-subtitle,.sectionF-subtitle{
     color: red;
     font-size: 24px;
     font-weight: 500;
     margin-bottom: 16px;
+    text-align: left;
 }
 
 .column-title{
@@ -255,17 +256,46 @@ main section{
 
 
 #pictures{
-    
+    overflow: hidden;
     background-image: url("../images/Rectangle\ 1.png"), url("../images/Rectangle\ 2.png");
     background-repeat: no-repeat;
     background-position: top right, bottom;
 
 }
 
-#img{
-    background-position: top right;
+/* sectionF related styles */
+.sectionF-title{
+    color: black;
+    font-size: 45px;
+    text-align: left;
+    font-weight: 900;
+    margin-top:0px;
+    margin-bottom: 20px;
 }
 
+.sectionF-description{
+    color: #6f7676;
+    font-size: 18px;
+    font-weight: 400;
+    max-width: 890px;
+    text-align: left;
+    line-height: 28px;
+    margin-top: 0px;
+    margin-bottom: 45px;
+    
+}
+
+.image-wrapper img{
+    overflow: hidden;
+    column-count : 3 ;
+    margin: 0px 12px 12px 0px;
+    align-items: center;
+    
+}
+
+.image-wrapper img:last-child{
+    margin-right: 0px;
+}
 
 
 
